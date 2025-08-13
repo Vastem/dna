@@ -46,4 +46,147 @@ Retorna un arreglo con los últimos 10 registros, cada uno con:
 -   Resultado mutación
 -   Fecha
 
+## Ejemplos peticiones
+
+```
+Ejemplo 1 - Petición JSON
+
+{
+  "dna": [
+    "CTTCGA",
+    "CAGTGC",
+    "TTACTG",
+    "CGAAAC",
+    "TCCATT",
+    "TCACTA"
+  ]
+}
+
+
+Ejemplo 2 - Petición JSON
+
+{
+  "dna": [
+    "ATTCGA",
+    "CAGTGC",
+    "ATACTG",
+    "AGAAAC",
+    "TCCCTT",
+    "TCACTA"
+  ]
+}
+
+
+Ejemplo 3 - Petición JSON
+
+{
+  "dna": [
+    "ATTCGA",
+    "CAGTGC",
+    "ATAATG",
+    "AGAAAT",
+    "TCCCTC",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 4 - Petición JSON
+
+{
+  "dna": [
+    "ATTCGA",
+    "CAGTGC",
+    "ATAATG",
+    "AGAAAT",
+    "TCCCTC",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 5 - Petición JSON
+
+{
+  "dna": [
+    "ATGCGA",
+    "CTGTGC",
+    "ATATGG",
+    "AGAAGG",
+    "TCCCTA",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 6 - Petición JSON
+
+{
+  "dna": [
+    "ATGCGA",
+    "ATGTGC",
+    "ATATGG",
+    "AGAAGG",
+    "TCCCTG",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 7 - Petición JSON
+
+{
+  "dna": [
+    "ATGCGA",
+    "ATGTGC",
+    "ATATGG",
+    "AGAAGG",
+    "CCCCTG",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 8 - Petición JSON
+
+{
+  "dna": [
+    "ATGCGA",
+    "CAGTGC",
+    "TTATGT",
+    "AGAAGG",
+    "CCCCTA",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 9 - Petición JSON
+
+{
+  "dna": [
+    "ATGCGA",
+    "CAGTGC",
+    "TTATGT",
+    "AGAAGG",
+    "CCCCTA",
+    "TCACTG"
+  ]
+}
+
+
+Ejemplo 10 - Petición JSON
+
+{
+  "dna": [
+    "CTTCGA",
+    "CAGTGC",
+    "TTACTG",
+    "CGAAAC",
+    "TCCATT",
+    "TCACTA"
+  ]
+}
+```
+
 ## [HOST](https://dna-production.up.railway.app/api)
