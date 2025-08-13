@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return ['mensaje' => 'Hola desde la API'];
+
+Route::redirect('/', '/api', 301);
+Route::fallback(function () {
+    return redirect('/api', 301);
 });
+
+
+

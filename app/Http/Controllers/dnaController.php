@@ -46,7 +46,6 @@ class dnaController extends Controller
 
     public function mutation_list(){
 
-        //Esta funcion devuelve los ultimos 10 registros de mutaciones
         $logs = DnaLog::orderBy('created_at', 'desc')->take(10)->get();
         if ($logs->isEmpty()) {
             return response()->json([
@@ -55,12 +54,10 @@ class dnaController extends Controller
             ], 404);
         }
 
-        //devolver solo logs
         return response()->json($logs, 200);
     }
 
     public function isMutation(Request $req){
-
         $val = Validator::make($req->all(), [
             'dna' => 'required'
         ]);
@@ -70,6 +67,17 @@ class dnaController extends Controller
                 'message' => $val->errors()
             ],400);
         }
+
+        $size = count($req->dna);
+
+    foreach ($req->dna as $cadena) {
+        if (strlen($cadena) !== $size) {
+            return response()->json([
+                "message" => 'El ADN debe ser cuadrado',
+                "success" => false
+            ], 400);
+        }
+    }
 
         $dnaString = implode("\n", $req->dna);
 
